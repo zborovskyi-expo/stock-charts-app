@@ -44,8 +44,9 @@ export class AppComponent {
   }
 
   getStockData(symbol) {
-
-    return this.http.get<any>('http://localhost:8000/stocks', { responseType: 'json', params: { symbol: symbol}, headers: { 'Content-Type': 'application/json' } })
+    let url = 'https://stock-charts-app.herokuapp.com/stocks';
+    //let url = 'http://localhost:8000/stocks';
+    return this.http.get<any>(url, { responseType: 'json', params: { symbol: symbol}, headers: { 'Content-Type': 'application/json' } })
       .subscribe(
         data => {
 
