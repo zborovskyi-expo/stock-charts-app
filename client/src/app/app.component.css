@@ -1,0 +1,22 @@
+.content {
+  max-width: 600px;
+  width: calc( 100% - 32px );
+  margin: 50px auto 20px;
+}
+
+.chart_content {
+  width: calc( 100% - 32px );
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+#candle_chart {
+  width: calc(100vw - 100px);
+  margin: 0 auto;
+  height: 600px;
+  min-width: 1200px;
+}
+
+h1 {
+  text-align: center;
+}
