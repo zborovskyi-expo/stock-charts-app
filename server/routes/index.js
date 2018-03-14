@@ -55,7 +55,7 @@ router.get('/stocks', (req, res, next) => {
 
 // Get Index
 router.get('*', (req, res, next) => {
-  res.sendFile(path.join(__dirname, '../../client/dist/index.html'));
+  res.sendFile(path.join(__dirname, '../../app/client/dist/index.html'));
 });
 
 module.exports = router;
