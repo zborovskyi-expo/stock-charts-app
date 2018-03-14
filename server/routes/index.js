@@ -55,7 +55,6 @@ router.get('/stocks', (req, res, next) => {
 
 // Get Index
 router.get('*', (req, res, next) => {
-  console.log("SLKDJF:LKJSD:LKJF:LSDKJF:LSKJD:FLKJ:LKFJ:DSLKJF:LKSDJF:LKJDSF")
   res.sendFile(path.join(__dirname, '../../client/dist/index.html'));
 });
 
